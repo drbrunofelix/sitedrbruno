@@ -1,0 +1,108 @@
+.calc-page {
+  min-height: 100vh;
+  padding-top: 90px;
+}
+
+.calc-page__header {
+  background: var(--color-bg-secondary);
+  border-bottom: 1px solid var(--color-border);
+  padding: 60px 0 48px;
+}
+
+.calc-page__title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 12px;
+}
+
+.calc-page__subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+.calc-page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  padding-top: 48px;
+  padding-bottom: 80px;
+}
+
+.calc-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+
+.calc-card:hover {
+  border-color: var(--color-accent-border);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+.calc-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  margin-bottom: 4px;
+}
+
+.calc-card__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.35;
+}
+
+.calc-card__desc {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  flex: 1;
+}
+
+.calc-card__badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  background: var(--color-accent-dim);
+  border: 1px solid var(--color-accent-border);
+  border-radius: 100px;
+  padding: 4px 12px;
+  align-self: flex-start;
+}
+
+.calc-card--active {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  border-color: var(--color-accent-border);
+}
+
+.calc-card--active:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 24px rgba(21, 120, 117, 0.12);
+}
+
+.calc-card__badge--active {
+  color: #fff;
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}

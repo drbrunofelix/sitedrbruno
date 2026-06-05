@@ -41,7 +41,7 @@ export default function Contact() {
         <div className="contact__text">
           <p className="section-label">Contato</p>
           <h2 className="section-title">
-            Pronto para cuidar da sua saúde esportiva?
+            Dê o próximo passo para cuidar da sua saúde!
           </h2>
           <p className="section-subtitle">
             Entre em contato pelo WhatsApp para agendar sua consulta. Atendimento presencial em Florianópolis e região. Online para todo o Brasil.

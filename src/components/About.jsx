@@ -64,20 +64,17 @@ export default function About() {
 
         <div className="about__content">
           <p className="section-label">Quem sou eu</p>
-          <h2 className="section-title">
-            Medicina Esportiva para todos
-          </h2>
           <p className="about__bio">
-            Sou o Dr. Bruno Felix, médico formado pela Universidade do Sul de Santa Catarina — UNISUL, com especialização e experiência em Medicina Esportiva.
+            Muito prazer, me chamo <strong>Bruno Felix Fernandes</strong>, médico formado pela Universidade do Sul de Santa Catarina — UNISUL, com especialização e experiência em <strong>Medicina Esportiva</strong>.
           </p>
           <p className="about__bio">
-            Atuo como médico da equipe profissional do <strong>Avaí Futebol Clube</strong> e como <strong>Oficial Médico da Força Aérea Brasileira</strong>, na Base Aérea de Florianópolis.
+            Atuo como médico da equipe profissional do <strong>Avaí Futebol Clube</strong> e como Oficial Médico da <strong>Força Aérea Brasileira</strong>, na Base Aérea de Florianópolis.
           </p>
           <p className="about__bio">
-            Minha prática une conhecimento clínico, embasamento científico e vivência diária no esporte de alto rendimento. Atendo atletas profissionais, atletas amadores e pessoas que desejam melhorar sua saúde, performance, composição corporal e qualidade de vida por meio de um cuidado médico individualizado.
+            Minha prática une conhecimento clínico, embasamento científico e vivência diária no <strong>esporte de alto rendimento</strong>. Atendo <strong>atletas profissionais</strong>, <strong>atletas amadores</strong> e pessoas que desejam melhorar sua saúde, performance, composição corporal e <strong>qualidade de vida</strong> por meio de um cuidado médico individualizado.
           </p>
           <p className="about__bio">
-            Acredito que o exercício é uma das ferramentas mais poderosas da medicina. Meu objetivo é oferecer uma abordagem moderna, segura e personalizada — seja na prevenção e tratamento de lesões, na avaliação pré-participação esportiva, na otimização do desempenho físico ou na construção de uma rotina mais ativa, saudável e sustentável.
+            Acredito que o <strong>exercício é uma das ferramentas mais poderosas da medicina</strong>. Meu objetivo é oferecer uma abordagem moderna, segura e personalizada — seja na prevenção e tratamento de lesões, na avaliação pré-participação esportiva, na otimização do desempenho físico ou na construção de uma rotina mais ativa, saudável e sustentável.
           </p>
 
         </div>

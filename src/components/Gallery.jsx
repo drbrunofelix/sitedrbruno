@@ -25,19 +25,14 @@ const experiences = [
 
 const photos = [
   {
-    src: '/avai_retrato.jpg',
-    alt: 'Dr. Bruno Felix no Avaí Futebol Clube',
-    caption: 'Avaí Futebol Clube',
-  },
-  {
-    src: '/avai_tunel.jpg',
-    alt: 'Dr. Bruno Felix no túnel do estádio do Avaí FC',
-    caption: 'Pré-jogo na Ressacada',
-  },
-  {
     src: '/exp-fab.jpg',
     alt: 'Dr. Bruno Felix — Oficial Médico da Força Aérea Brasileira',
     caption: 'Força Aérea Brasileira',
+  },
+  {
+    src: '/avai_retrato.jpg',
+    alt: 'Dr. Bruno Felix no Avaí Futebol Clube',
+    caption: 'Avaí Futebol Clube',
   },
   {
     src: '/exp-consultorio.jpg',
@@ -45,7 +40,7 @@ const photos = [
     caption: 'Consultório particular',
   },
   {
-    src: '/exp-cetrus.jpg',
+    src: '/exp-cetrus.png',
     alt: 'Certificado de Especialização — Cetrus-SP',
     caption: 'Especialização Cetrus-SP',
   },

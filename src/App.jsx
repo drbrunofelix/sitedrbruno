@@ -1,21 +1,28 @@
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Gallery from './components/Gallery'
-import Services from './components/Services'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Home from './pages/Home'
+import Blog from './pages/Blog'
+import Calculadoras from './pages/Calculadoras'
+import SemaglutidaCalcPage from './pages/SemaglutidaCalcPage'
+import ImcCalcPage from './pages/ImcCalcPage'
+import ZonasFreqCalcPage from './pages/ZonasFreqCalcPage'
+import TmbCalcPage from './pages/TmbCalcPage'
 
 export default function App() {
   return (
     <>
       <Navbar />
       <main>
-        <Hero />
-        <About />
-        <Gallery />
-        <Services />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/calculadoras" element={<Calculadoras />} />
+          <Route path="/calculadoras/semaglutida" element={<SemaglutidaCalcPage />} />
+          <Route path="/calculadoras/imc" element={<ImcCalcPage />} />
+          <Route path="/calculadoras/zonas-fc" element={<ZonasFreqCalcPage />} />
+          <Route path="/calculadoras/tmb" element={<TmbCalcPage />} />
+        </Routes>
       </main>
       <Footer />
     </>

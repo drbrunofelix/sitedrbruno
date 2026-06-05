@@ -19,7 +19,7 @@ export default function Hero() {
           </div>
 
           <p className="hero__tagline">
-            Performance para quem vive o esporte.
+            Medicina esportiva para todos.
             <br />
             Do atleta profissional ao paciente que quer evoluir.
           </p>

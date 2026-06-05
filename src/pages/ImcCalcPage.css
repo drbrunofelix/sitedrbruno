@@ -1,0 +1,407 @@
+.imc-page {
+  min-height: 100vh;
+  padding-top: 90px;
+}
+
+.imc-page__header {
+  background: var(--color-bg-secondary);
+  border-bottom: 1px solid var(--color-border);
+  padding: 48px 0 40px;
+}
+
+.imc-page__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 16px;
+}
+
+.imc-page__breadcrumb a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.imc-page__breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.imc-page__title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 10px;
+}
+
+.imc-page__subtitle {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* Layout */
+
+.imc-layout {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 48px;
+  padding: 48px 0 72px;
+  align-items: start;
+}
+
+/* Calculator */
+
+.imc-calc {
+  position: sticky;
+  top: 108px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.imc-calc__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.imc-calc__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.imc-calc__label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.imc-calc__input {
+  padding: 12px 16px;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 1.05rem;
+  color: var(--color-text-primary);
+  background: var(--color-bg-card);
+  outline: none;
+  transition: border-color var(--transition);
+  width: 100%;
+}
+
+.imc-calc__input:focus {
+  border-color: var(--color-accent);
+}
+
+/* Results */
+
+.imc-calc__results {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.imc-calc__results-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
+}
+
+.imc-calc__empty {
+  font-size: 0.88rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 16px;
+}
+
+/* Value card */
+
+.imc-calc__value-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: color-mix(in srgb, var(--result-color) 10%, transparent);
+  border: 1.5px solid color-mix(in srgb, var(--result-color) 30%, transparent);
+  border-radius: var(--radius-md);
+  margin-bottom: 20px;
+}
+
+.imc-calc__value {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--result-color);
+  line-height: 1;
+}
+
+.imc-calc__value-unit {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin-top: 4px;
+}
+
+.imc-calc__classification {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--result-color);
+}
+
+/* BMI bar */
+
+.imc-bar {
+  margin-bottom: 24px;
+}
+
+.imc-bar__track {
+  position: relative;
+  display: flex;
+  height: 14px;
+  border-radius: 100px;
+  overflow: visible;
+  margin-bottom: 28px;
+}
+
+.imc-bar__seg {
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.imc-bar__seg:first-child { border-radius: 100px 0 0 100px; }
+.imc-bar__seg:last-of-type { border-radius: 0 100px 100px 0; }
+
+/* Widths: range 10–40. Each segment width = (range / 30) * 100% */
+.imc-bar__seg--blue   { width: 28.3%; background: #3b82f6; } /* 10–18.5 */
+.imc-bar__seg--green  { width: 21.7%; background: #22c55e; } /* 18.5–25 */
+.imc-bar__seg--yellow { width: 16.7%; background: #f59e0b; } /* 25–30 */
+.imc-bar__seg--red    { width: 33.3%; background: #ef4444; } /* 30–40 */
+
+.imc-bar__marker {
+  position: absolute;
+  left: var(--pos);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 3px solid #1e293b;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.imc-bar__labels {
+  position: relative;
+  height: 18px;
+  font-size: 0.72rem;
+  color: var(--color-text-secondary);
+}
+
+.imc-bar__labels span {
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+/* Action buttons */
+
+.imc-calc__actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.imc-calc__btn {
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+}
+
+.imc-calc__btn:hover {
+  background: var(--color-accent-light);
+}
+
+.imc-calc__btn--outline {
+  background: transparent;
+  color: var(--color-text-primary);
+  border: 1.5px solid var(--color-border);
+}
+
+.imc-calc__btn--outline:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* CTA */
+
+.imc-calc__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 14px 20px;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+  box-shadow: 0 4px 16px rgba(21, 120, 117, 0.3);
+  margin-bottom: 20px;
+}
+
+.imc-calc__cta:hover {
+  background: var(--color-accent-light);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(21, 120, 117, 0.4);
+}
+
+.imc-calc__disclaimer {
+  font-size: 0.78rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-border);
+}
+
+/* Educational info */
+
+.imc-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 4px;
+}
+
+.imc-info__block h2 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 10px;
+}
+
+.imc-info__block p {
+  font-size: 0.92rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.imc-formula {
+  margin: 16px 0;
+  padding: 18px 24px;
+  background: var(--color-bg-secondary);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: 0.01em;
+}
+
+.imc-info__vars {
+  margin: 14px 0;
+}
+
+.imc-info__vars strong {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--color-text-primary);
+  margin-bottom: 6px;
+}
+
+.imc-info__vars ul {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.imc-info__vars li {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+.imc-info__tip {
+  background: var(--color-accent-dim);
+  border: 1px solid var(--color-accent-border);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+}
+
+.imc-info__tip strong {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--color-accent);
+  margin-bottom: 4px;
+}
+
+.imc-info__tip p {
+  font-size: 0.88rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Classification table */
+
+.imc-table {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.imc-table__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  gap: 12px;
+}
+
+.imc-table__range {
+  font-size: 0.9rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.imc-table__label {
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.imc-table__row--blue   { background: rgba(59,130,246,0.1);  color: #1d4ed8; }
+.imc-table__row--green  { background: rgba(34,197,94,0.1);   color: #15803d; }
+.imc-table__row--yellow { background: rgba(245,158,11,0.1);  color: #b45309; }
+.imc-table__row--red    { background: rgba(239,68,68,0.1);   color: #b91c1c; }
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .imc-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .imc-calc {
+    position: static;
+  }
+}
+
+@media (max-width: 480px) {
+  .imc-bar__labels span { font-size: 0.65rem; }
+}
