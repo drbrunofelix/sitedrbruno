@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Blog.css'
 
 const posts = [
@@ -15,6 +16,7 @@ export default function Blog() {
     <div className="blog-page">
       <div className="blog-page__header">
         <div className="container">
+          <Link to="/" className="blog-page__back">← Voltar ao site</Link>
           <p className="section-label">Blog</p>
           <h1 className="blog-page__title">Artigos & Conteúdo</h1>
           <p className="blog-page__subtitle">
