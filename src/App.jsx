@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
-import Blog from './pages/Blog'
 import Calculadoras from './pages/Calculadoras'
 import SemaglutidaCalcPage from './pages/SemaglutidaCalcPage'
 import ImcCalcPage from './pages/ImcCalcPage'
@@ -16,7 +15,6 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
           <Route path="/calculadoras" element={<Calculadoras />} />
           <Route path="/calculadoras/semaglutida" element={<SemaglutidaCalcPage />} />
           <Route path="/calculadoras/imc" element={<ImcCalcPage />} />

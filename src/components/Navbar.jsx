@@ -51,13 +51,13 @@ export default function Navbar() {
               {l.label}
             </button>
           ))}
-          <Link
+          <a
             className="navbar__link"
-            to="/blog"
+            href="https://blog.drbrunofelix.com.br"
             onClick={() => setMenuOpen(false)}
           >
             Blog
-          </Link>
+          </a>
           <Link
             className="navbar__link"
             to="/calculadoras"
