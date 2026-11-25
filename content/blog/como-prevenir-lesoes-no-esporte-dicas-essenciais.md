@@ -6,7 +6,7 @@ date: "2026-10-13"
 updated: "2026-10-15"
 author: "Dr. Bruno Felix"
 tags: ["Lesões Esportivas", "Saúde e Performance"]
-cover: "/blog/capas/como-prevenir-lesoes-no-esporte-dicas-essenciais.webp"
+cover: "/blog/capas/como-prevenir-lesoes-no-esporte-dicas-essenciais-v2.webp"
 cover_alt: "Como prevenir lesões no esporte: dicas essenciais"
 draft: false
 faq:
