@@ -470,7 +470,7 @@ function notFoundPage() {
 
 // ---------------------------------------------------------------- arquivos para buscadores e IAs
 
-const STATIC_PAGES = ['/', '/calculadoras', '/calculadoras/semaglutida', '/calculadoras/imc', '/calculadoras/zonas-fc', '/calculadoras/tmb']
+const STATIC_PAGES = ['/', '/calculadoras', '/calculadoras/semaglutida', '/calculadoras/imc', '/calculadoras/zonas-fc', '/calculadoras/tmb', '/calculadoras/ldl', '/calculadoras/risco-cardiovascular']
 
 function sitemap(posts, tags, listPages) {
   const urls = [
@@ -507,7 +507,7 @@ const llms = (posts) => `# Dr. Bruno Felix | Saúde & Performance
 ## Atendimento
 - [Como funciona o acompanhamento](${SITE}/#especialidades): consulta de 1h, retorno online, grupo de 60 dias e app de acompanhamento
 - [Agendar consulta](${SITE}/#contato): pelo WhatsApp; presencial na Rua Jair Hamms, 38, Ed. Atrium, Sala 613B, Pedra Branca, Palhoça/SC, ou online
-- [Calculadoras](${SITE}/calculadoras): IMC, taxa metabólica basal, zonas de frequência cardíaca e semaglutida
+- [Calculadoras](${SITE}/calculadoras): IMC, taxa metabólica basal, zonas de frequência cardíaca, semaglutida, LDL-colesterol (Martin/Hopkins) e risco cardiovascular (PREVENT, Diretriz Brasileira de Dislipidemias 2025)
 
 ## Artigos
 ${posts.map((p) => `- [${p.title}](${SITE}${p.url}): ${p.description}`).join('\n') || '- Em breve.'}

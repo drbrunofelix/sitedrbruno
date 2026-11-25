@@ -58,6 +58,30 @@ export default function Calculadoras() {
           <span className="calc-card__badge calc-card__badge--active">Disponível</span>
         </Link>
 
+        <Link to="/calculadoras/ldl" className="calc-card calc-card--active">
+          <div className="calc-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 3.75c-2.5 3.4-6 7.3-6 10.5a6 6 0 0012 0c0-3.2-3.5-7.1-6-10.5z" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 14.25h4.5" />
+            </svg>
+          </div>
+          <h2 className="calc-card__title">LDL-colesterol (Martin/Hopkins)</h2>
+          <p className="calc-card__desc">Calcule o LDL a partir do colesterol total, HDL e triglicerídeos, e compare com a meta da sua categoria de risco.</p>
+          <span className="calc-card__badge calc-card__badge--active">Disponível</span>
+        </Link>
+
+        <Link to="/calculadoras/risco-cardiovascular" className="calc-card calc-card--active">
+          <div className="calc-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 11.25h2.5l1.5-2.5 2.5 5 1.5-2.5h2.5" />
+            </svg>
+          </div>
+          <h2 className="calc-card__title">Risco Cardiovascular (PREVENT)</h2>
+          <p className="calc-card__desc">Estime o risco de infarto e AVC em 10 anos e veja sua categoria de risco e metas de LDL pela Diretriz Brasileira 2025.</p>
+          <span className="calc-card__badge calc-card__badge--active">Disponível</span>
+        </Link>
+
       </div>
     </div>
   )
