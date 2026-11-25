@@ -186,6 +186,7 @@ const PHYSICIAN = {
     streetAddress: 'Rua Jair Hamms, 38, Ed. Atrium, Sala 613B, Pedra Branca',
     addressLocality: 'Palhoça',
     addressRegion: 'SC',
+    postalCode: '88136-086',
     addressCountry: 'BR',
   },
   areaServed: [
