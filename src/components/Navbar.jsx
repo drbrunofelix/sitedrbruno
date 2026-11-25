@@ -53,7 +53,7 @@ export default function Navbar() {
           ))}
           <a
             className="navbar__link"
-            href="https://blog.drbrunofelix.com.br"
+            href="/blog"
             onClick={() => setMenuOpen(false)}
           >
             Blog

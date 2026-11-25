@@ -1,0 +1,22 @@
+# Republica o site todo dia às 06:00 (Brasília) para os artigos agendados entrarem no ar.
+# Requer o segredo VERCEL_DEPLOY_HOOK (Settings > Secrets and variables > Actions) com a URL do Deploy Hook da Vercel.
+name: Rebuild diário do blog
+
+on:
+  schedule:
+    - cron: "0 9 * * *" # 09:00 UTC = 06:00 em Brasília
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Chamar o Deploy Hook da Vercel
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "::error::Segredo VERCEL_DEPLOY_HOOK não configurado."
+            exit 1
+          fi
+          curl -fsS -X POST "$HOOK"

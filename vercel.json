@@ -1,0 +1,57 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/blog/rss.xml",
+      "has": [{ "type": "host", "value": "blog.drbrunofelix.com.br" }],
+      "destination": "https://www.drbrunofelix.com.br/rss.xml",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:section(categoria|autor)/:rest*",
+      "has": [{ "type": "host", "value": "blog.drbrunofelix.com.br" }],
+      "destination": "https://www.drbrunofelix.com.br/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:slug",
+      "has": [{ "type": "host", "value": "blog.drbrunofelix.com.br" }],
+      "destination": "https://www.drbrunofelix.com.br/blog/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "blog.drbrunofelix.com.br" }],
+      "destination": "https://www.drbrunofelix.com.br/blog",
+      "permanent": true
+    },
+    { "source": "/blog/categoria/:rest*", "destination": "/blog", "permanent": true },
+    { "source": "/blog/autor/:rest*", "destination": "/blog", "permanent": true },
+    { "source": "/blog/rss.xml", "destination": "/rss.xml", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/((?!blog|assets/).*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(llms.txt|robots.txt)",
+      "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }]
+    },
+    {
+      "source": "/rss.xml",
+      "headers": [{ "key": "Content-Type", "value": "application/rss+xml; charset=utf-8" }]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [{ "key": "Content-Type", "value": "application/xml; charset=utf-8" }]
+    },
+    {
+      "source": "/blog/(capas|imagens)/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }]
+    }
+  ]
+}

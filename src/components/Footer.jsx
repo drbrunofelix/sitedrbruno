@@ -13,6 +13,9 @@ export default function Footer() {
             height="168"
           />
         </div>
+        <nav className="footer__links" aria-label="Rodapé">
+          <a href="/blog">Blog</a>
+        </nav>
         <p className="footer__copy">
           © {new Date().getFullYear()} Dr. Bruno Felix · Florianópolis/SC · Todos os direitos reservados
         </p>
