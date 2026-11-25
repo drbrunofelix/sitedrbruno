@@ -6,7 +6,7 @@ date: "2026-10-11"
 updated: "2026-10-11"
 author: "Dr. Bruno Felix"
 tags: ["Saúde e Performance", "Geral"]
-cover: "/blog/capas/remedios-para-baixar-colesterol-estatinas-em-idosos-qual-a-atual-recomendacao.webp"
+cover: "/blog/capas/remedios-para-baixar-colesterol-estatinas-em-idosos-qual-a-atual-recomendacao-v2.webp"
 cover_alt: "Remédios para baixar colesterol (estatinas) em idosos. Qual a atual recomendação?"
 draft: false
 faq:

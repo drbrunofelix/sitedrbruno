@@ -6,7 +6,7 @@ date: "2026-10-11"
 updated: "2026-10-11"
 author: "Dr. Bruno Felix"
 tags: ["Saúde e Performance", "Geral"]
-cover: "/blog/capas/como-funciona-a-consulta-medica-online-e-suas-vantagens.webp"
+cover: "/blog/capas/como-funciona-a-consulta-medica-online-e-suas-vantagens-v2.webp"
 cover_alt: "Como funciona a consulta médica online e suas vantagens"
 draft: false
 faq:

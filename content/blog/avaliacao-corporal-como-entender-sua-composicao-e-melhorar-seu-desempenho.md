@@ -6,7 +6,7 @@ date: "2026-10-13"
 updated: "2026-10-15"
 author: "Dr. Bruno Felix"
 tags: ["Saúde e Performance", "Avaliação Física"]
-cover: "/blog/capas/avaliacao-corporal-como-entender-sua-composicao-e-melhorar-seu-desempenho.webp"
+cover: "/blog/capas/avaliacao-corporal-como-entender-sua-composicao-e-melhorar-seu-desempenho-v2.webp"
 cover_alt: "Avaliação corporal: como entender sua composição e melhorar seu desempenho"
 draft: false
 faq:
