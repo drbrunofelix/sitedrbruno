@@ -13,6 +13,46 @@ const SITE = 'https://www.drbrunofelix.com.br'
 
 const PAGES = [
   {
+    route: '/calculadoras',
+    title: 'Calculadoras de Saúde e Performance | Dr. Bruno Felix',
+    description:
+      'Calculadoras gratuitas de IMC, gasto calórico (TMB), zonas de frequência cardíaca, semaglutida, LDL-colesterol e risco cardiovascular.',
+    summary:
+      'Ferramentas do Dr. Bruno Felix para acompanhar saúde e performance: IMC (classificação da OMS), taxa metabólica basal e gasto calórico diário (Harris-Benedict revisada), zonas de treino Z1–Z5 por frequência cardíaca, doses e fracionamento de canetas de semaglutida, LDL-colesterol por Martin/Hopkins e risco cardiovascular em 10 anos pelo escore PREVENT. Os resultados são orientativos e não substituem consulta médica.',
+  },
+  {
+    route: '/calculadoras/imc',
+    title: 'Calculadora de IMC (Índice de Massa Corporal) | Dr. Bruno Felix',
+    description:
+      'Calcule seu IMC com peso e altura e veja em qual faixa você está pela classificação da OMS: baixo peso, peso adequado, sobrepeso ou obesidade.',
+    summary:
+      'Calculadora de IMC (Índice de Massa Corporal): IMC = peso (kg) ÷ altura² (m). Classificação para adultos segundo a OMS: abaixo de 18,5 baixo peso; 18,5 a 24,9 peso adequado; 25 a 29,9 sobrepeso; 30 ou mais obesidade.',
+  },
+  {
+    route: '/calculadoras/tmb',
+    title: 'Calculadora de Gasto Calórico e TMB | Dr. Bruno Felix',
+    description:
+      'Calcule a taxa metabólica basal (TMB) pela equação de Harris-Benedict revisada e estime seu gasto calórico diário total (TDEE) pelo nível de atividade.',
+    summary:
+      'Calculadora da taxa metabólica basal (TMB, em kcal/dia) pela equação de Harris-Benedict revisada, com estimativa do gasto energético diário total (TDEE) conforme o nível de atividade física.',
+  },
+  {
+    route: '/calculadoras/zonas-fc',
+    title: 'Zonas de Treino por Frequência Cardíaca | Dr. Bruno Felix',
+    description:
+      'Descubra suas zonas de treino Z1 a Z5 pela frequência cardíaca máxima, informada ou estimada pela idade, para treinar com a intensidade certa.',
+    summary:
+      'Calculadora de zonas de treinamento Z1 a Z5 por porcentagem da frequência cardíaca máxima (FCmáx). A FCmáx pode ser informada diretamente ou estimada pela idade por fórmula.',
+  },
+  {
+    route: '/calculadoras/semaglutida',
+    title: 'Calculadora de Semaglutida: doses e cliques | Dr. Bruno Felix',
+    description:
+      'Calcule doses e fracionamento das canetas de semaglutida, com o volume em mL e o número de cliques para cada dose prescrita.',
+    summary:
+      'Calculadora de doses e fracionamento de canetas de semaglutida: converte a dose prescrita em volume (mL) e número de cliques da caneta. Uso conforme prescrição médica.',
+  },
+  {
     route: '/calculadoras/ldl',
     title: 'Calculadora de LDL (Martin/Hopkins) | Dr. Bruno Felix',
     description:
