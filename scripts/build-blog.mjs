@@ -420,7 +420,7 @@ ${p.html}
   <div class="bcontainer bcontainer--narrow">
     <aside class="bcta">
       <p class="bcta__title">Quer uma avaliação individualizada?</p>
-      <p>Atendimento presencial em Pedra Branca (Palhoça/SC) e online para todo o Brasil.</p>
+      <p>Atendimento presencial em Florianópolis e região e online para todo o Brasil.</p>
       <a class="bbtn" href="${esc(cta)}" target="_blank" rel="noopener">Agendar consulta</a>
     </aside>
     ${
@@ -435,8 +435,8 @@ ${p.html}
       <img src="/logo-symbol.png" alt="" width="64" height="64" loading="lazy">
       <div>
         <p><strong>Dr. Bruno Felix</strong> | CRM/SC 33920</p>
-        <p>Pós-graduação em Medicina Esportiva. NÃO ESPECIALISTA.</p>
-        <p>Atendimento presencial em Pedra Branca (Palhoça/SC) e online para todo o Brasil.</p>
+        <p>Saúde e Performance</p>
+        <p>Atendimento presencial em Florianópolis e região e online para todo o Brasil.</p>
       </div>
     </aside>
     <p class="bdisclaimer">Conteúdo informativo. Não substitui consulta médica.</p>
